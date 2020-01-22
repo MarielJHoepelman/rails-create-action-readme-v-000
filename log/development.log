@@ -143,3 +143,12 @@ Redirected to http://67.205.182.198:49545/posts/6
 Completed 302 Found in 22ms (ActiveRecord: 7.6ms)
 
 
+Started GET "/posts/6" for 108.29.35.155 at 2020-01-22 20:55:36 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
